@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Cita - Uñas Bellas</title>
+  <link rel="stylesheet" href="/css/formulario.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+  <header class="bg-pink-400 text-white p-6 text-center shadow">
+    <h1 class="text-2xl font-bold">📝 Agenda tu Cita y Confirma por WhatsApp</h1>
+  </header>
+
+  <main class="max-w-md mx-auto p-6">
+
+    <form id="form-cita" class="space-y-4 bg-white p-6 rounded-xl shadow-lg">
+
+      <div>
+        <label for="nombre" class="block font-semibold">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre" class="w-full border rounded p-2" required>
+      </div>
+
+      <div>
+        <label for="dia" class="block font-semibold">Día</label>
+        <input type="date" name="dia" id="dia" class="w-full border rounded p-2" required>
+      </div>
+
+      <div>
+        <label for="hora" class="block font-semibold">Hora</label>
+        <input type="time" name="hora" id="hora" class="w-full border rounded p-2" required>
+      </div>
+
+      <div>
+        <label for="telefono" class="block font-semibold">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" class="w-full border rounded p-2" required>
+      </div>
+
+      <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full w-full font-semibold shadow">
+        📲 Confirmar por WhatsApp
+      </button>
+    </form>
+
+  </main>
+
+  <script src="/js/citas.js"></script>
+
+</body>
+</html>
