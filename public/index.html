@@ -15,6 +15,24 @@
   </header>
 
   <main class="max-w-4xl mx-auto p-6">
+
+    <!-- Carrusel -->
+    <section class="relative w-full max-w-3xl mx-auto mb-10">
+      <div class="overflow-hidden rounded-xl shadow-lg">
+        <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+          <img src="multi/nails1.jpg" class="w-full flex-shrink-0" alt="Uñas 1">
+          <img src="multi/nails2.jpg" class="w-full flex-shrink-0" alt="Uñas 2">
+        </div>
+      </div>
+      <!-- Botones -->
+      <button id="prev" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-pink-400 hover:bg-pink-500 text-white p-3 rounded-full shadow">
+        &#10094;
+      </button>
+      <button id="next" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-pink-400 hover:bg-pink-500 text-white p-3 rounded-full shadow">
+        &#10095;
+      </button>
+    </section>
+
     <section class="mb-6">
       <h2 class="text-2xl font-semibold text-pink-600">Sobre nosotros</h2>
       <p class="mt-2">Ofrecemos uñas acrílicas, gel semipermanente y decoración personalizada. Saldrás feliz y con estilo ✨</p>
@@ -40,6 +58,10 @@
   <footer class="bg-pink-300 text-white p-4 text-center">
     <p>&copy; 2025 Uñas Bellas - Todos los derechos reservados</p>
   </footer>
+
+  <!-- Script externo -->
+  <script src="/js/carruselI.js"></script>
+  <script src="/js/citas.js"></script>
 
 </body>
 </html>
