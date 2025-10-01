@@ -4,62 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uñas Bellas - Inicio</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/index.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-pink-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
-  <header class="bg-pink-400 text-white p-6 text-center shadow">
-    <h1 class="text-3xl font-bold">💅 Uñas Bellas</h1>
-    <p class="mt-1">Diseños únicos para realzar tu estilo</p>
+  <!-- HEADER PREMIUM -->
+  <header class="premium-header">
+    <div class="header-container">
+      <div class="header-text">
+        <h1>💅 Uñas Bellas</h1>
+        <p>Diseños únicos que reflejan tu estilo ✨</p>
+        <a href="/formulario" class="btn-agendar">📝 Agendar cita</a>
+      </div>
+      <div class="header-image">
+        <img src="multi/header-bg.jpg" alt="Uñas Bellas">
+        <div class="header-overlay"></div>
+      </div>
+    </div>
   </header>
 
-  <main class="max-w-4xl mx-auto p-6">
+  <main class="max-w-6xl mx-auto p-6">
 
-    <!-- Carrusel -->
-    <section class="relative w-full max-w-3xl mx-auto mb-10">
-      <div class="overflow-hidden rounded-xl shadow-lg">
+    <!-- CARRUSEL -->
+    <section class="relative">
+      <div class="carousel-wrapper overflow-hidden rounded-2xl shadow-2xl">
         <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-          <img src="multi/nails1.jpg" class="w-full flex-shrink-0" alt="Uñas 1">
-          <img src="multi/nails2.jpg" class="w-full flex-shrink-0" alt="Uñas 2">
+          <img src="multi/nails1.jpg" alt="Uñas 1">
+          <img src="multi/nails2.jpg" alt="Uñas 2">
+          <img src="multi/nails3.jpg" alt="Uñas 3">
         </div>
       </div>
-      <!-- Botones -->
-      <button id="prev" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-pink-400 hover:bg-pink-500 text-white p-3 rounded-full shadow">
-        &#10094;
-      </button>
-      <button id="next" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-pink-400 hover:bg-pink-500 text-white p-3 rounded-full shadow">
-        &#10095;
-      </button>
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+      <div class="carousel-indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </section>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold text-pink-600">Sobre nosotros</h2>
-      <p class="mt-2">Ofrecemos uñas acrílicas, gel semipermanente y decoración personalizada. Saldrás feliz y con estilo ✨</p>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="mb-12 text-center">
+      <h2>Sobre nosotros</h2>
+      <p class="mt-4 max-w-2xl mx-auto">
+        Somos especialistas en uñas acrílicas, gel semipermanente y decoración personalizada. 
+        Nuestro objetivo es que salgas feliz, segura y con un estilo que te represente ✨
+      </p>
     </section>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold text-pink-600">Servicios</h2>
-      <ul class="list-disc list-inside mt-2">
-        <li>Manicure clásico</li>
-        <li>Uñas acrílicas</li>
-        <li>Gel semipermanente</li>
-        <li>Decoración personalizada</li>
-      </ul>
+    <!-- SERVICIOS -->
+    <section class="mb-12">
+      <h2 class="text-center">Servicios</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <div class="service-card">
+          <h3>💖 Manicure clásico</h3>
+          <p>El cuidado esencial para unas manos suaves y elegantes.</p>
+        </div>
+        <div class="service-card">
+          <h3>💎 Uñas acrílicas</h3>
+          <p>Resistentes y estilizadas con diseños únicos.</p>
+        </div>
+        <div class="service-card">
+          <h3>✨ Gel semipermanente</h3>
+          <p>Colores vibrantes que duran mucho más tiempo.</p>
+        </div>
+        <div class="service-card">
+          <h3>🎨 Decoración personalizada</h3>
+          <p>Diseños exclusivos adaptados a tu estilo.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="text-center">
-      <a href="/formulario" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow">
-        📝 Agendar cita
-      </a>
+    <!-- GALERÍA -->
+    <section class="mb-12">
+      <h2 class="text-center">Galería</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+        <img src="multi/nails1.jpg" alt="Diseño 1">
+        <img src="multi/nails2.jpg" alt="Diseño 2">
+        <img src="multi/nails3.jpg" alt="Diseño 3">
+        <img src="multi/nails4.jpg" alt="Diseño 4">
+        <img src="multi/nails5.jpg" alt="Diseño 5">
+        <img src="multi/nails6.jpg" alt="Diseño 6">
+      </div>
     </section>
+
+    <!-- PROMOCIONES -->
+    <section class="mb-12">
+      <h2 class="text-center">Promociones especiales 🎉</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <div class="promo-card">
+          <h3>💅 2x1 Manicure</h3>
+          <p>Disfruta de un 2x1 en manicure clásico este mes.</p>
+        </div>
+        <div class="promo-card">
+          <h3>✨ Uñas de gel -10%</h3>
+          <p>Obtén un 10% de descuento en gel semipermanente durante la semana.</p>
+        </div>
+        <div class="promo-card">
+          <h3>🎨 Decoración exclusiva</h3>
+          <p>Descuento especial en diseños personalizados para tus uñas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTÓN AGENDAR -->
+    <section class="text-center mb-12">
+      <a href="/formulario" class="btn-agendar">📝 Agendar cita</a>
+    </section>
+
+    <!-- MAPA -->
+    <section class="mb-12">
+      <h2 class="text-center">📍 Nuestra Ubicación</h2>
+      <div class="map-container">
+        <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15062.949170565194!2d-99.7790234!3d19.293787350000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8778f38bb57b%3A0xdd1273137d30b970!2sMi%20Bodega%20Aurrer%C3%A1%20Tlalcilalcalpan!5e0!3m2!1ses-419!2smx!4v1759359492911!5m2!1ses-419!2smx"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="bg-pink-300 text-white p-4 text-center">
+  <footer>
     <p>&copy; 2025 Uñas Bellas - Todos los derechos reservados</p>
   </footer>
 
-  <!-- Script externo -->
+  <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">💬</a>
+
+  <script src="/js/particles.js"></script>
   <script src="/js/carruselI.js"></script>
   <script src="/js/citas.js"></script>
 
