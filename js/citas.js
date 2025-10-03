@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Número de WhatsApp del negocio en formato internacional (sin +)
-    const whatsappNumber = "+527228964383"; // Cambia por tu número real
+    const whatsappNumber = "+527221570454"; // Cambia por tu número real
 
     // Formatear la fecha de forma legible (opcional)
     const fechaFormateada = new Date(dia).toLocaleDateString('es-MX', {
