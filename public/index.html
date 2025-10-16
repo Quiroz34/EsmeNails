@@ -3,154 +3,474 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glam Nails Studio - Inicio</title>
+  <title>Glam Nails Studio - Belleza y Diseño Profesional en Uñas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/css/index.css">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- HEADER PREMIUM -->
-  <header class="premium-header">
-    <div class="header-background"></div>
-    <div class="header-content">
-      <h1>Glam Nails Studio</h1>
-      <p>Diseños únicos que reflejan tu estilo ✨</p>
-      <a href="/formulario" class="btn-agendar">📝 Agendar cita</a>
-    </div>
+<body>
+  <!-- Header Minimalista -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-brand">
+        <a href="/" class="luxury-font">Glam Nails</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="/formulario" class="btn btn-primary btn-sm">Reservar Cita</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
   </header>
 
-  <main class="max-w-6xl mx-auto p-6">
-
-    <!-- CARRUSEL -->
-    <section class="relative">
-      <div class="carousel-wrapper overflow-hidden rounded-2xl shadow-2xl">
-        <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-          <img src="multi/nails7.jpg" alt="Nails 1">
-          <img src="multi/nails8.jpg" alt="Nails 2">
-          <img src="multi/nails9.jpg" alt="Nails 3">
+  <!-- Hero Section Rediseñada -->
+  <section id="inicio" class="hero">
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title luxury-font">Eleva tu estilo con <span class="gradient-text">Glam Nails</span></h1>
+        <p class="hero-subtitle">Donde la elegancia se encuentra con el arte en uñas. Experimenta el lujo en cada detalle con nuestros servicios premium.</p>
+        <div class="hero-buttons">
+          <a href="#servicios" class="btn btn-primary">Explorar Servicios</a>
+          <a href="/formulario" class="btn btn-outline">Reservar Ahora</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Clientes Satisfechas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Años de Experiencia</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Clientes Recurrentes</div>
+          </div>
         </div>
       </div>
-      <button id="prev">&#10094;</button>
-      <button id="next">&#10095;</button>
-      <div class="carousel-indicators">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+    </div>
+    <div class="hero-scroll">
+      <span>Descubre más</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Servicios Premium -->
+  <section id="servicios" class="section services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title luxury-font">Servicios Exclusivos</h2>
+        <p class="section-subtitle">Descubre nuestra gama de servicios premium diseñados para realzar tu belleza natural</p>
       </div>
-    </section>
-
-
-    <!-- SOBRE NOSOTROS -->
-    <section class="mb-12 text-center">
-      <h2>Sobre nosotros</h2>
-      <p class="mt-4 max-w-2xl mx-auto">
-        Somos manicuristas especializadas en el cuidado de tus uñas naturales aportando embellecimiento a tus manos.
-      </p>
-      <p>
-        Nuestro objetivo es que disfrutes la experiencia de sentirte consentida, segura de ti misma y con un estilo que te represente cuidándote tus manos. 
-        ✨
-      </p>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section class="mb-12">
-      <h2 class="text-center">Servicios</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+      
+      <div class="services-grid">
         <div class="service-card">
-          <h3>💖 MANICURA</h3>
-          <p>Consiste en el cuidado y embellecimiento esencial 
-            para unas manos suaves y uñas elegantes.</p>
+          <div class="service-icon">
+            <i class="fas fa-spa"></i>
+          </div>
+          <h3>Manicura Spa Premium</h3>
+          <p>Tratamiento de lujo que incluye limado profesional, cuidado de cutículas, exfoliación e hidratación profunda con productos de primera calidad.</p>
+          <div class="service-footer">
+            <div class="service-price">$220</div>
+            <a href="/formulario" class="btn btn-outline btn-sm">Reservar</a>
+          </div>
         </div>
+        
+        <div class="service-card featured">
+          <div class="service-badge">Más Popular</div>
+          <div class="service-icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3>Uñas Acrílicas Premium</h3>
+          <p>Extensiones de máxima durabilidad con acabado perfecto y apariencia natural. Incluye diseño personalizado.</p>
+          <div class="service-footer">
+            <div class="service-price">$420</div>
+            <a href="/formulario" class="btn btn-primary btn-sm">Reservar</a>
+          </div>
+        </div>
+        
         <div class="service-card">
-          <h3>💎 ACRILICAS</h3>
-          <p>EXtensión de la uña sobre tips o formas esculturales, se recubren con acrílico 
-            que estiliza, crea dureza y la posibilidad de aplicar varios retoques</p>
+          <div class="service-icon">
+            <i class="fas fa-magic"></i>
+          </div>
+          <h3>Gel Semipermanente</h3>
+          <p>Esmaltado de larga duración que protege y fortalece tus uñas naturales. Mantén un aspecto impecable por semanas.</p>
+          <div class="service-footer">
+            <div class="service-price">$280</div>
+            <a href="/formulario" class="btn btn-outline btn-sm">Reservar</a>
+          </div>
         </div>
+        
         <div class="service-card">
-          <h3>✨ GEL SEMIPERMANENTE</h3>
-          <p>Protege tu uña natural, fortalece y promueve su crecimiento usando 
-            colores vibrantes que duran mucho mas tiempo que el esmalte tradicional.</p>
+          <div class="service-icon">
+            <i class="fas fa-feather-alt"></i>
+          </div>
+          <h3>Soft Gel Natural</h3>
+          <p>Extensiones ligeras y flexibles que proporcionan máxima comodidad con apariencia completamente natural.</p>
+          <div class="service-footer">
+            <div class="service-price">$480</div>
+            <a href="/formulario" class="btn btn-outline btn-sm">Reservar</a>
+          </div>
         </div>
+        
         <div class="service-card">
-          <h3>🎨 SOFT GEL</h3>
-          <p>Extensión de uña realizada con tips de gel que proporciona duración y resistencia 
-            como cualquier otro esculpido logrando una apariencia estilizada.</p>
+          <div class="service-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Recubrimiento Rubber</h3>
+          <p>Sistema revolucionario ideal para uñas frágiles, proporcionando máxima resistencia y flexibilidad.</p>
+          <div class="service-footer">
+            <div class="service-price">$320</div>
+            <a href="/formulario" class="btn btn-outline btn-sm">Reservar</a>
+          </div>
         </div>
-                <div class="service-card">
-          <h3>💅 RUBBER</h3>
-          <p>Perfecto para uñas frágiles y quebradizas con tendencia a romperse, aporta fuerza y
-             resistencia para mantener tus uñas largas naturalmente. </p>
-        </div>
-                <div class="service-card">
-          <h3>🌟 POLYGEL</h3>
-          <p>Sistema de uñas en el que se moldea un gel solido para construir uñas mas resistentes y 
-            ligeras, puedes elegir entre las varias técnicas de aplicación del polygel.</p>
-        </div>
-                <div class="service-card">
-          <h3>💆 MANI SPA</h3>
-          <p>Consiéntete con un masaje hidratante que
-             te dejará una sensación de humectación por horas. </p>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-snowflake"></i>
+          </div>
+          <h3>Sistema Polygel</h3>
+          <p>Tecnología innovadora que combina lo mejor del acrílico y el gel para resultados perfectos y duraderos.</p>
+          <div class="service-footer">
+            <div class="service-price">$520</div>
+            <a href="/formulario" class="btn btn-outline btn-sm">Reservar</a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- GALERÍA -->
-    <section class="mb-12">
-      <h2 class="text-center">Galería</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-        <div><img src="multi/nails1.jpg" alt="Diseño 1"><span>POLYGEL</span></div>
-        <div><img src="multi/nails2.jpg" alt="Diseño 2"><span>BAÑO DE ACRILICO</span></div>
-        <div><img src="multi/nails3.jpg" alt="Diseño 3"><span>SOFT GEL</span></div>
-        <div><img src="multi/nails4.jpg" alt="Diseño 4"><span>ACRILICAS</span></div>
-        <div><img src="multi/nails5.jpg" alt="Diseño 5"><span>SOFT GEL</span></div>
-        <div><img src="multi/nails6.jpg" alt="Diseño 6"><span>GEL SEMIPERMANENTE</span></div>
+  <!-- Galería Moderna -->
+  <section id="galeria" class="section gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title luxury-font">Nuestro Portfolio</h2>
+        <p class="section-subtitle">Inspírate con nuestros diseños exclusivos y trabajos realizados</p>
       </div>
-    </section>
-
-
-    <!-- PROMOCIONES -->
-    <section class="mb-12">
-      <h2 class="text-center">Promociones especiales 🎉</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <div class="promo-card">
-          <h3>💅 PROXIMAMENTE</h3>
-          <p>Pronto, espera estas super promociones.</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="/multi/nails1.jpg" alt="Diseño Francés Moderno">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <h3>Diseño Francés Moderno</h3>
+              <p>Elegancia atemporal con un toque contemporáneo</p>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- BOTÓN AGENDAR -->
-    <section class="text-center mb-12">
-      <a href="/formulario" class="btn-agendar">📝 Agendar cita</a>
-    </section>
-
-    <!-- MAPA -->
-    <section class="mb-12">
-      <h2 class="text-center">📍 Nuestra Ubicación</h2>
-      <div class="map-container">
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.892466237654!2d-99.6424241!3d19.287042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd898cfd442e5b%3A0x6e81a4a755022f1b!2sIgnacio%20P%C3%A9rez%20407%2C%20V%C3%A9rtice%2C%2050150%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1759436297489!5m2!1ses-419!2smx"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        
+        <div class="gallery-item">
+          <img src="/multi/nails2.jpg" alt="Acrílico con Decoración">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <h3>Acrílico con Decoración</h3>
+              <p>Arte en cada uña con detalles exclusivos</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="/multi/nails3.jpg" alt="Soft Gel Natural">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <h3>Soft Gel Natural</h3>
+              <p>Belleza sutil y sofisticada</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="/multi/nails4.jpg" alt="Polygel con Diseño Abstracto">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <h3>Polygel Abstracto</h3>
+              <p>Expresión artística en cada uña</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="/multi/nails5.jpg" alt="Gel Semipermanente Color Block">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <h3>Color Block</h3>
+              <p>Fusión moderna de colores y formas</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="/multi/nails6.jpg" alt="Acrílico con Piedras">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <h3>Acrílico con Piedras</h3>
+              <p>Lujo y brillo en cada detalle</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- Sobre Nosotros -->
+  <section id="nosotros" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="section-header text-left">
+            <h2 class="section-title luxury-font">Experiencia y Excelencia</h2>
+            <p class="section-subtitle">Más de 15 años transformando uñas con arte y precisión</p>
+          </div>
+          <p>En Glam Nails Studio nos especializamos en el cuidado y embellecimiento de uñas, ofreciendo servicios de alta calidad con los mejores productos del mercado. Nuestro compromiso es brindarte una experiencia única donde cada detalle cuenta.</p>
+          <p>Nuestro equipo de profesionales está capacitado en las últimas técnicas y tendencias, garantizando resultados excepcionales que realzan tu belleza natural y reflejan tu estilo personal.</p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Productos de primera calidad certificados</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Técnicas innovadoras y actualizadas</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Ambiente higiénico y seguro certificado</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Atención personalizada y consultoría de estilo</span>
+            </div>
+          </div>
+          <div class="about-cta">
+            <a href="/formulario" class="btn btn-primary">Programa tu Consulta</a>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-container">
+            <img src="/multi/salon-interior.jpg" alt="Interior de nuestro estudio Glam Nails">
+            <div class="experience-badge">
+              <div class="badge-content">
+                <span class="years">15+</span>
+                <span class="label">Años de Experiencia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p class="footer-left">&copy; 2025 Glam Nails Studio - Todos los derechos reservados</p>
-    <p class="footer-right">Desarrollado por Carlos Quiroz - CONTACTO 7228964383</p>
+  <!-- Testimonios -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title luxury-font">Lo que dicen nuestras clientas</h2>
+        <p class="section-subtitle">Experiencias reales de mujeres que confían en nosotros</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Increíble experiencia! Mis uñas quedaron perfectas y el servicio fue excepcional. Definitivamente mi lugar favorito."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>María González</h4>
+              <span>Cliente desde 2020</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"La atención al detalle es impresionante. Siempre salgo feliz con mis uñas y recibo muchos cumplidos."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Ana Rodríguez</h4>
+              <span>Cliente frecuente</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Profesionalismo y calidad excepcionales. Mis uñas siempre duran perfectas hasta la próxima cita."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Laura Martínez</h4>
+              <span>Cliente desde 2019</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title luxury-font">¿Lista para tu transformación?</h2>
+        <p class="cta-subtitle">Reserva tu cita hoy y experimenta el lujo de un servicio premium</p>
+        <div class="cta-buttons">
+          <a href="/formulario" class="btn btn-primary btn-large">
+            <i class="fas fa-calendar-plus"></i>
+            Reservar Cita Ahora
+          </a>
+          <a href="https://wa.me/+527221570454" target="_blank" class="btn btn-outline btn-large">
+            <i class="fab fa-whatsapp"></i>
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title luxury-font">Visítanos</h2>
+        <p class="section-subtitle">Te esperamos en nuestro estudio para brindarte la mejor experiencia</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Dirección</h4>
+              <p>Ignacio Pérez 407, Vértice, 50150 Toluca de Lerdo, Méx.</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Teléfono</h4>
+              <p>722 896 4383</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>info@glamnailsstudio.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Horario</h4>
+              <p>Lunes a Sábado: 9:00 AM - 7:00 PM</p>
+              <p>Domingo: 10:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.892466237654!2d-99.6424241!3d19.287042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd898cfd442e5b%3A0x6e81a4a755022f1b!2sIgnacio%20P%C3%A9rez%20407%2C%20V%C3%A9rtice%2C%2050150%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1759436297489!5m2!1ses-419!2smx"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2 class="luxury-font">Glam Nails Studio</h2>
+          <p>Donde la elegancia se encuentra con el arte en uñas. Transformamos tu estilo con servicios premium y atención personalizada.</p>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Ignacio Pérez 407, Toluca</p>
+          <p><i class="fas fa-phone"></i> 722 896 4383</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Glam Nails Studio - Todos los derechos reservados</p>
+        <p>Desarrollado por Carlos Quiroz - CONTACTO 7228964383</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/+527221570454" target="_blank" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-  <a href="https://wa.me/+527221570454" target="_blank" class="whatsapp-btn">💬</a>
-
-  <script src="/js/particles.js"></script>
-  <script src="/js/carruselI.js"></script>
-  <script src="/js/citas.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
